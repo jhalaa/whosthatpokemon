@@ -1,0 +1,11 @@
+{
+  "name": "whosthatpokemon",
+  "version": "1.0.0",
+  "description": "A pokemon guessing game",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "jhalaa",
+  "license": "ISC"
+}
