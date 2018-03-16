@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ sprite }}
+    <img :src="sprite" />
   </div>
 </template>
 
