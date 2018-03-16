@@ -1,11 +1,14 @@
 <template>
-<header>Who's that Pokemon!!</header>
-
+  <div>
+    {{ pokemonName }}
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld'
+  props: ['pokemonName'],
+  name: 'Name'
+
 }
 </script>
 
