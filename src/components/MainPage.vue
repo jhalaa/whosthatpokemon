@@ -40,5 +40,17 @@ export default {
 </script>
 
 <style>
-
+@font-face
+{
+font-family: pokemon-font;
+src: url('./../assets/pokemonSolid.ttf')
+}
+header {
+  font-family: 'pokemon-font', monospace;
+  font-size: 127px;
+  color: yellow;
+  text-shadow: #0828de -13px 5px;
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: blue;
+}
 </style>
