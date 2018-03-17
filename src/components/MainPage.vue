@@ -1,8 +1,16 @@
 <template>
   <div>
     <header>Who's that Pokemon!!</header>
-    <Sprite :sprite="sprite"/>
-    <Name :pokemonName="pokemonName"/>
+    <div>
+      <Sprite :sprite="sprite"/>
+      <div>
+        <Name />
+      </div>
+    </div>
+    <footer class="footer navbar-fixed-bottom">
+      <button @click="checkAnswer" class="btn-blck btn-primary">Check Answer</button>
+      <button class="btn-blck btn-secondary">Next Pokemon</button>
+    </footer>
   </div>
 </template>
 
@@ -16,6 +24,15 @@ export default {
   components: {
     Sprite,
     Name
+  },
+  methods: {
+    checkAnswer () {
+      if (this.pokemonName === document.getElementById('pokemonName').value) {
+        console.log(true)
+      } else {
+        console.log(false)
+      }
+    }
   },
   data () {
     return {
@@ -52,5 +69,13 @@ header {
   text-shadow: #0828de -13px 5px;
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color: blue;
+}
+button {
+  width: 160px;
+  height: 50px;
+  margin: 30px;
+}
+body {
+  background-color: black;
 }
 </style>

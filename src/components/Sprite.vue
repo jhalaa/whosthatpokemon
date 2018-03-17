@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <img :src="sprite" />
-  </div>
+    <img :src="sprite" width="100" height="100"/>
 </template>
 
 <script>
@@ -13,5 +11,8 @@ export default {
 </script>
 
 <style>
-
+img {
+  width: 20%;
+  height: 20%;
+}
 </style>

@@ -1,14 +1,12 @@
 <template>
   <div>
-    {{ pokemonName }}
+    <input id="pokemonName" type="text" placeholder="pokemonName"/>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['pokemonName'],
   name: 'Name'
-
 }
 </script>
 
